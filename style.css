@@ -406,13 +406,38 @@ footer a:hover{
     grid-template-columns: 1fr;
   }
 }
-/* ===== Responsive Design for Mobile Devices ===== */
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 768px) {
+  /* Layout & Spacing */
   body {
-    padding: 10px;
     font-size: 16px;
+    padding: 10px;
   }
 
+  .about,
+  .container,
+  .content,
+  .resume-section,
+  .projects,
+  .skills,
+  .experience {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding: 20px 10px !important;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  /* Headings */
   h1 {
     font-size: 2.5rem;
     text-align: center;
@@ -423,6 +448,16 @@ footer a:hover{
     text-align: center;
   }
 
+  h3 {
+    text-align: center;
+  }
+
+  /* Paragraphs */
+  p {
+    text-align: justify;
+  }
+
+  /* Buttons */
   .btn {
     font-size: 0.9rem;
     padding: 10px 16px;
@@ -430,12 +465,16 @@ footer a:hover{
     margin-top: 10px;
   }
 
+  /* Skills Grid */
   .skills-list {
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
   }
 
+  /* Projects Layout */
   .project-item {
+    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -446,22 +485,21 @@ footer a:hover{
     margin-bottom: 10px;
   }
 
-  .about, .resume-section, .projects, .skills, .experience {
-    padding: 20px 10px;
-  }
-
+  /* Social Links */
   .social-links {
+    display: flex;
     flex-direction: column;
     gap: 10px;
+    align-items: center;
   }
 
   .social-links img {
     width: 30px;
   }
 
+  /* Footer */
   footer {
     font-size: 14px;
     text-align: center;
   }
 }
-

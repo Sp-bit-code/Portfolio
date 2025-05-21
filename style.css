@@ -406,3 +406,62 @@ footer a:hover{
     grid-template-columns: 1fr;
   }
 }
+/* ===== Responsive Design for Mobile Devices ===== */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+    font-size: 16px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .btn {
+    font-size: 0.9rem;
+    padding: 10px 16px;
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+
+  .project-item {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-item img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .about, .resume-section, .projects, .skills, .experience {
+    padding: 20px 10px;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .social-links img {
+    width: 30px;
+  }
+
+  footer {
+    font-size: 14px;
+    text-align: center;
+  }
+}
+

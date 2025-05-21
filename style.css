@@ -1,0 +1,408 @@
+
+/* Global Styles */
+
+/* 
+     dark-green - #3c8453
+     sarly-beige - #bcaa96
+     dark grey - #222
+     light grey - #d3d4d6 
+     off-white - #f6f6f6
+ */
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+.profile-text {
+  font-family: 'Patrick Hand', cursive;
+}
+html,body{
+    height: 100%;
+}
+*,*::before,*::after{
+    box-sizing: inherit;
+    margin:0;
+}
+
+main {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px; /* Overall font size */
+  line-height: 1.6; /* Better readability */
+}
+
+#profile-summary {
+  font-size: 19px; 
+}
+
+.content-wrapper{
+    margin:0 auto;
+    padding: 30px;
+    max-width:1000px;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7rem;
+    line-height: 1.5;
+    background-color: rgba(241, 238, 238, 0.9); /* dark grey with transparency */
+    
+}
+
+a{
+    color:#3c8453;
+}
+a:hover{
+    color:#bcaa96;
+}
+
+.btn {
+    background-color: #dc8d04;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 1.4rem;
+    padding: 10px 15px;
+    display: inline-block;
+    line-height: 1;
+    border-radius: 8px;
+    letter-spacing: 0.1em;
+    box-shadow: 0 0 10px rgba(211, 115, 11, 0.4);
+    transition: all 0.3s ease-in-out;
+    border: none;
+}
+.btn:hover {
+    background-color: #d7860d;
+    box-shadow: 0 0 20px rgba(243, 83, 9, 0.7), 0 0 40px rgba(76, 175, 80, 0.3);
+    transform: scale(1.05);
+}
+h1,h2,h3{
+    font-family: "Montserrat", cursive;
+    font-weight: 400;
+    margin:0;
+}
+h1{
+    font-size: 7rem;
+    line-height: 1.85;
+}
+h2{
+    font-size: 3.6rem;
+}
+h3{
+    font-size: 2rem;
+}
+
+/* Index */
+.home{
+    background : url(images/CjhM8EZGf4xtfVVZTyvSh.jpg) no-repeat;
+    background-size: cover ;
+    display: flex;
+    flex-direction: column;
+}
+.home .content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    flex: 1 0 auto;
+}
+
+/* Modified block */
+.home .content-bg {
+    padding: 100px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 20px; /* rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* subtle shadow */
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+/* Hover effect */
+.home .content-bg:hover {
+    box-shadow: 0 10px 25px rgba(130, 4, 226, 0.874); /* deeper shadow on hover */
+    transform: translateY(-6px); /* slight lift effect */
+}
+
+
+/* Resume */
+.resume header::before{
+    background: url(images/CjhM8EZGf4xtfVVZTyvSh.jpg) center/cover;
+    content:"";
+    display: block;
+    height: 375px;
+}
+.resume-section{
+    margin-bottom:50px;
+}
+.resume-section h2{
+    border-bottom: 2px dashed #d3d4d6 ;
+}
+.project-item {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 20px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 30px 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.project-item:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 12px 45px rgba(226, 61, 1, 0.2);
+}
+
+.project-item img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+/* Optional: Make the buttons glow slightly */
+.project-item .btn {
+  background-color: #f5a609;
+  color: #fff;
+  border: none;
+  padding: 8px 16px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  box-shadow: 0 0 10px rgba(60, 132, 83, 0.6);
+  transition: box-shadow 0.3s ease, transform 0.2s ease;
+}
+
+.project-item .btn:hover {
+  box-shadow: 0 0 20px rgba(60, 132, 83, 0.9);
+  transform: scale(1.05);
+}
+
+.download-link{
+    font-size: 1.5rem;
+    position:fixed;
+    top:5px;
+    left:5px;   
+}
+
+/* Profile */
+/* Projects */
+.project-item {
+    margin: 30px 0;
+}
+.project-item img {
+    width: 300px;
+}
+/* Work Experience */
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 items per row */
+  gap: 15px 30px; /* vertical and horizontal spacing */
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.skills-list li {
+  font-size: 1.3rem; /* slightly larger font */
+  background-color: #f9f9f9;
+  padding: 12px 16px;
+  border-radius: 10px; /* rounded corners like cards */
+  border: 1px solid #ddd; /* soft border for card feel */
+  transition: background-color 0.3s ease; /* smooth color change */
+}
+
+/* Basic hover effect only */
+.skills-list li:hover {
+  background-color: #e0f0ff; /* soft blue on hover */
+}
+
+
+
+.work-item{
+    margin-block: 30px;
+}
+.work-details p{
+    margin: 0;
+}
+.work-summary p:first-child{
+    margin-top: 0;
+}
+
+/* Education */
+.education-item{
+    margin-block: 30px;
+}
+.education-item p{
+    margin: 0;
+}
+.experience-entry {
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.experience-entry img {
+  width: 60px;
+  height: 60px;
+  margin-right: 10px;
+}
+
+/* Yeh naya part hai */
+.experience-entry ul {
+  margin-bottom: 20px;
+}
+
+.github-button {
+  background-color: orange;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 10px; /* Yeh chhota sa gap deta hai upar */
+  text-decoration: none;
+}
+
+
+/* Footer */
+footer {
+    background-color: rgba(34, 34, 34, 0.6); 
+    backdrop-filter: blur(8px);             
+    -webkit-backdrop-filter: blur(8px);      
+    color: #ebeef5;
+    position: relative;
+    z-index: 10;
+}
+
+.resume-section {
+  text-align: left;
+  padding-left: 50px; /* or adjust as needed */
+}
+
+.socials {
+  display: flex;
+  justify-content: flex-start; /* align to left */
+  gap: 20px;
+  list-style: none;
+  padding: 10px 0 0 0;
+  margin: 0;
+}
+
+.socials li img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 5px #00f0ff);
+  transition: 0.3s ease-in-out;
+}
+
+.socials li img:hover {
+  filter: drop-shadow(0 0 8px #00f0ff)
+          drop-shadow(0 0 16px #00f0ff)
+          drop-shadow(0 0 24px #00f0ff);
+  transform: scale(1.1);
+}
+
+
+footer a{
+    color:#bcaa96;;
+}
+footer a:hover{
+    color:#dd970a
+}
+
+.socials{
+    list-style-type:none;
+    padding: 0;
+}
+
+.socials img{
+    width: 32px;
+}
+
+.socials li{
+    display: inline-block;
+    margin-left:10px;
+}
+.socials img:hover{
+    opacity: 50%;
+}
+
+@media (max-width:500) {
+    .resume header::befor{
+        height: 200px;
+    }
+    h1{
+        font-size: 5rem;
+    }
+    h2{
+        font-size: 2.6rem;
+    }
+}
+
+@media (min-width:860px) {
+    .work-item{
+        display: grid;
+        grid-template-columns: 300px 1fr;
+        column-gap: 20px;
+    }
+    .work-summary p:first-child{
+        margin-top: 0;
+    }
+}
+
+
+@media (min-width:860px) {
+    .project-item{
+        display: flow-root;
+    }
+    .project-item img{
+    float:left;
+    margin-right: 20px;
+}
+}
+
+@media (min-width:650px) and (max-width:859px){
+    .project-wrapper{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+    }
+    .project-item img{
+        width: 100%;
+    }
+}
+@media (max-width:500px) {
+    .project-item img{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+@media(max-width:1250px){
+    .download-link{
+        position: absolute;
+    }
+}
+
+@media (min-width:860px){
+    footer{
+        display :flex;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+}
+
+@media(max-width:859px){
+    footer{
+        text-align : center;
+        padding: 10px;
+    }
+}
+@media (max-width: 768px) {
+  .skills-list {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+}
